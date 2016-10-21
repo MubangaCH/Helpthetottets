@@ -161,7 +161,58 @@ def tottet():
                 print("answer not among options, try again")
                 question()
         question()
-                
+
+
+    elif pickNum == 4:
+            print ("Hope you're good at literature")
+
+            def question():
+                ques4 = input ("Who is the author of Big Friendly Giant? Is it Dr.Seuss, Dahl or Rowling?\n").upper()
+
+                if ques4== 'DAHL':
+                    print (" Great job. Next stage")
+
+                    print ("You have 3 chances on next stage, think long and hard")
+                    
+                    for turn in range(3):
+                        userNum = int(input ("choose a number from 1 to 5 and hope for the best\n"))
+
+                        if userNum > 0 and userNum < 6:
+
+                    
+                            if userNum == compNum:
+                                print ("yay you have helped us")
+                                break
+
+                            else:
+                                if userNum < compNum:
+                                    print (" Oopss, take it up a notch or two")
+
+                                elif userNum > compNum:
+                                    print ("Oopss, bring it down a notch or two")
+                                    print (compNum)
+
+                                else:
+                                    print ("Game over")
+
+                                if turn == 2:
+                                    print ("You've run out of luck" + " " + name)
+                                    print ("Game over")
+
+                                print ("Trial", turn + 1)
+
+                        else:
+                            print ("invalid number, try again")
+                            
+                elif ques4 == 'Dr.SEUSS' or ques4 == 'ROWLING':
+                    print ("Nope, it was the Dahl...Game over")
+                        
+                else:
+                    print("answer not among options, try again")
+                    question()
+            question()
+
+        
     else:
         print("invalid number" + " " + name + " " + ", try again" )
         tottet()
