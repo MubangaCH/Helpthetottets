@@ -11,7 +11,7 @@ print ("Welcome" + " " + name + " " + "we'll see if you mean us harm or help")
 
 def tottet():
 
-    pickNum = int(input ("Choose a number from 1 to 10\n"))
+    pickNum = int(input ("Choose a number from 1 to 5\n"))
 
 
 
@@ -211,7 +211,40 @@ def tottet():
                     print("answer not among options, try again")
                     question()
             question()
-
+    elif PickNum == 5
+        print ("Hope you're good at anagrams\n")
+        
+        def question():
+            ques5 = input ("Using all the letters make an animal from Balm\n").upper()
+            
+            if ques5 == "LAMB"
+            print ("Baa baa good job!\n  Cross your fingers for the next stage")
+            
+            for turn in range(3):
+                UserNum = int(input("Choose a number from 1 to 5 and hope for the best\n"))
+                
+                if UserNum > 0 and UserNum < 6:
+                    
+                    
+                    if UserNum==CompNum:
+                        print("Yay you've saved us" + name + "We owe you")
+                        
+                        
+                    else:
+                        if UserNum<CompNum:
+                            print("Too high, try a smaller number")
+                            
+                        if UserNum>CompNum:
+                            print("Too low, try a bigger number")
+                            
+                        else:
+                            print("Game over")
+                        
+                     
+                              
+                              
+                
+              
         
     else:
         print("invalid number" + " " + name + " " + ", try again" )
