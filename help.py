@@ -255,7 +255,9 @@ tottet()
           
 #else:
 #    input ('Pick a valid number')
-
+# add anagrams
+# add a timer
+# reduce code or edit it to become more iterative.
     
         
     
